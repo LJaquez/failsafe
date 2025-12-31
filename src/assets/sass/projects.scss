@@ -5,19 +5,99 @@
 // should go into root.scss
 // ─────────────────────────────────────────────────────────────────────────────
 
-/*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
+/* ---------------------------------- */
+/*           Gallery Slideshow            */
+/* ---------------------------------- */
 
 /* Mobile - 360px */
+/* ---------------------------------- */
+/*              Gallery Video         */
+/* ---------------------------------- */
+
 @media only screen and (min-width: 0rem) {
-    #gallery-48 {
-        padding: var(--sectionPadding);
-        position: relative;
+  #gallery-2235 {
+    padding-top: clamp(3.75rem, 7.82vw, 6.25rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+  }
+
+  #gallery-2235 .cs-container {
+    width: 100%;
+    max-width: calc(1920 / 16 * 1rem);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #gallery-2235 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: calc(1280 / 16 * 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #gallery-2235 .cs-flex-group {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+  }
+
+  #gallery-2235 .cs-topper {
+    color: var(--primary);
+  }
+
+  #gallery-2235 .cs-text {
+    max-width: none;
+  }
+
+  #gallery-2235 .cs-wrapper {
+    width: 100%;
+  }
+
+  /* Self-hosted video */
+  #gallery-2235 .cs-video-media {
+    width: 100%;
+    height: clamp(21.25rem, 60vw, 52.5rem);
+    display: block;
+  
+    object-fit: cover;     /* keeps it nicely cropped if you force height */
+    background: #000;
+  }
+
+  /* YouTube/Vimeo embed keeps aspect ratio */
+  #gallery-2235 .cs-video-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+   
+    overflow: hidden;
+    background: #000;
+  }
+
+  #gallery-2235 .cs-video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 0rem) {
+    #gallery-2235 {
+        padding-top: clamp(3.75rem, 7.82vw, 6.25rem) ;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        background-color: #fff;
 
         .cs-container {
             width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
+            max-width: calc(1920/16 * 1rem);
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -27,144 +107,374 @@
         }
 
         .cs-content {
-            text-align: center;
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
             width: 100%;
+            max-width: calc(1280/16 * 1rem);
             display: flex;
             flex-direction: column;
-            align-items: center;
-        }
-
-        .cs-image-group {
-            /* used rem so it doesn't scale with the font size of on parent */
-            font-size: min(1.1vw, 1em);
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
+            /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
-            /* 8px - 20px */
-            gap: clamp(0.5rem, 2vw, 1.25rem);
         }
 
-        .cs-row {
-            width: 100%;
+        .cs-flex-group {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            /* 8px - 20px */
-            gap: clamp(0.5rem, 2vw, 1.25rem);
+            /* prevents flexbox from squishing it */
+            flex: none;
         }
 
-        .cs-picture {
+        .cs-topper {
+            color: var(--primary);
+        }
+
+        .cs-text {
+            max-width: none;
+        }
+
+        .cs-wrapper {
             width: 100%;
-            position: relative;
-            display: block;
-            border-radius: calc(8 / 16 * 1rem);
             overflow: hidden;
+        }
+
+        .cs-slideshow {
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .cs-slide {
+            width: 100%;
+            /* 340px - 840px */
+            height: clamp(21.25rem, 60vw, 52.5rem);
+            margin: auto;
+            opacity: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s, opacity 0.3s, z-index 0.3s;
 
             img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
-        }
 
-        .cs-row-1 {
-            .cs-picture-1 {
-                height: calc(567 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(629 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(512 / 16 * 1em);
-            }
-        }
-
-        .cs-row-2 {
-            .cs-picture-1 {
-                height: calc(492 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(517 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
-            }
-        }
-
-        .cs-row-3 {
-            .cs-picture-1 {
-                height: calc(625 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(452 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
-            }
-        }
-
-        .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            margin: 0;
-            color: #fff;
-            min-width: calc(150 / 16 * 1rem);
-            padding: 0 calc(24 / 16 * 1rem);
-            background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #000;
+            /* classes applied by the JS file */
+            &.initial,
+            &.active {
                 opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
-                transition: width 0.3s;
+                position: relative;
+                z-index: 900;
             }
 
-            &:hover {
-                &:before {
-                    width: 100%;
+            &.prev,
+            &.next {
+                z-index: 800;
+            }
+
+            &.prev {
+                transform: translateX(-100%);
+            }
+
+            &.next {
+                transform: translateX(100%);
+            }
+        }
+
+        .cs-slideshow-button {
+            /* 36px - 80px */
+            width: clamp(2.25rem, 6vw, 5rem);
+            /* 36px - 80px */
+            height: clamp(2.25rem, 6vw, 5rem);
+            cursor: pointer;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            z-index: 1000;
+            transform: translateY(-50%);
+
+            &::before {
+                content: "";
+                /* 20px - 64px */
+                width: clamp(1.25rem, 5vw, 4rem);
+                /* 20px - 64px */
+                height: clamp(1.25rem, 5vw, 4rem);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.cs-slideshow-prev {
+                left: calc(16/16 * 1rem);
+
+                &::before {
+                    background-image: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/slideshow-left.svg");
+                }
+            }
+
+            &.cs-slideshow-next {
+                right: calc(16/16 * 1rem);
+
+                &::before {
+                    background-image: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/slideshow-right.svg");
                 }
             }
         }
     }
 }
 
-/* Dark mode */
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-2235 {
+        .cs-content {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: calc(40/16 * 1rem);
+        }
+
+        .cs-title {
+            margin-bottom: 0;
+        }
+
+        .cs-flex-group {
+            width: 55%;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #gallery-48 {
-            .cs-title {
-                color: var(--bodyTextColorWhite);
+    #gallery-1689 {
+        padding-top: 0;
+        padding-bottom: 0 ;
+        padding-left: 1rem ;
+        padding-right:1rem ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .cs-picture {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            /* width divided by height */
+            aspect-ratio: 109/180;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
     }
 }
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-1689 {
+        grid-template-columns: repeat(6, 1fr);
+
+        .cs-picture {
+            /* 180px - 420px */
+            height: clamp(11.25rem, 30vw, 26.25rem);
+            aspect-ratio: initial;
+        }
+    }
+}
+                                                             
+/*-- -------------------------- */
+/*        Side By Side          */
+/*----------------------------- */
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-578 {
+    .cs-container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+
+    .cs-content {
+      text-align: left;
+      width: 100%;
+      max-width: calc(522 / 16 * 1rem);
+      /* moved section padding to the .cs-content so media can be full width on mobile */
+      padding: var(--sectionPadding);
+      padding-top: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cs-text {
+      margin-bottom: calc(16 / 16 * 1rem);
+
+      &:last-of-type {
+        margin-bottom: calc(32 / 16 * 1rem);
+      }
+    }
+
+    .cs-button-solid {
+      font-size: calc(16 / 16 * 1rem);
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      min-width: calc(150 / 16 * 1rem);
+      padding: 0 calc(24 / 16 * 1rem);
+      background-color: var(--primary);
+      border-radius: calc(4 / 16 * 1rem);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      box-sizing: border-box;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: calc(4 / 16 * 1rem);
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    /* ----------------------------
+       Media (Vertical Video Frame)
+       ---------------------------- */
+
+    .cs-picture {
+      display: block;
+      position: relative;
+      width: 100%;
+
+      /* Make it feel vertical on purpose */
+      aspect-ratio: 10 / 16;
+
+      /* keeps the contents clipped + nice looking */
+      overflow: hidden;
+      background: #000; /* prevents white flash while loading */
+    }
+
+    /* If you still use an <img> anywhere, this keeps it compatible */
+    .cs-picture img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Self-hosted video */
+    .cs-video-media {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      background: #000;
+    }
+
+    /* YouTube/Vimeo embed wrapper */
+    .cs-video-embed {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .cs-video-embed iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-578 {
+    padding: var(--sectionPadding);
+    padding-bottom: 0;
+
+    .cs-container {
+      flex-direction: row;
+      justify-content: flex-start;
+      /* 60px - 128px */
+      gap: clamp(3.75rem, 10vw, 8rem);
+      align-items: center;
+    }
+
+    .cs-content {
+      width: 53%;
+      /* reset the padding, add the section padding back to the section container */
+      padding: 0;
+      justify-content: center;
+    }
+
+    .cs-picture {
+      width: 47vw;
+      max-width: calc(494 / 16 * 1rem);
+
+      /* Still vertical */
+      aspect-ratio: 10 / 16;
+
+      /* spacing + yellow box overlap */
+      margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+      position: relative;
+      overflow: hidden;
+      background: #000;
+
+      &:before {
+        /* yellow box */
+        content: "";
+        width: 50%;
+        height: 60%;
+        background: var(--secondary);
+        opacity: 1;
+        display: block;
+        position: absolute;
+        bottom: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+        left: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+      }
+    }
+  }
+}
+
+                                

@@ -8,16 +8,20 @@
 			body: "body",
 			navigation: "#cs-navigation",
 			hamburger: "#cs-navigation .cs-toggle",
-			menuWrapper: "#cs-ul-wrapper",
+			menuWrapper: "#cs-navigation .cs-ul-wrapper",
 			dropdownToggle: ".cs-dropdown-toggle",
 			dropdown: ".cs-dropdown",
 			dropdownMenu: ".cs-drop-ul",
 			navButton: ".cs-nav-button",
 			darkModeToggle: "#dark-mode-toggle",
+			tertiaryToggle: ".cs-drop3-main .cs-drop-link",
+			tertiaryItem: ".cs-drop3-main",
+			tertiaryMenu: ".cs-drop3",
 		},
 		CLASSES: {
 			active: "cs-active",
 			menuOpen: "cs-open",
+			tertiaryActive: "drop3-active",
 		},
 	};
 
@@ -59,8 +63,13 @@
 			if (menu) {
 				menu.inert = true;
 			}
+			dropdown.querySelectorAll(`.${CONFIG.CLASSES.tertiaryActive}`).forEach((el) => {
+				el.classList.remove(CONFIG.CLASSES.tertiaryActive);
+			});
+			dropdown.querySelectorAll(CONFIG.SELECTORS.tertiaryMenu).forEach((m) => (m.inert = true));
 
 			return true;
+
 		},
 
 		toggle(element) {
@@ -191,7 +200,27 @@
 				}, 1);
 			}
 		},
+		handleTertiaryClick(event) {
+			if (!isMobile()) return;
+
+			const toggle = event.target.closest(CONFIG.SELECTORS.tertiaryToggle);
+			if (!toggle) return;
+
+			event.preventDefault();
+			event.stopPropagation(); // stops the parent dropdown click handler from fighting you
+
+			const item = toggle.closest(CONFIG.SELECTORS.tertiaryItem);
+			if (!item) return;
+
+			item.classList.toggle(CONFIG.CLASSES.tertiaryActive);
+
+			const menu = item.querySelector(CONFIG.SELECTORS.tertiaryMenu);
+			if (menu) toggleInert(menu);
+		},
+
 	};
+	
+	
 
 	// Initialization & Setup
 	const init = {
@@ -206,7 +235,11 @@
 			if (elements.navigation) {
 				const dropdownMenus = elements.navigation.querySelectorAll(CONFIG.SELECTORS.dropdownMenu);
 				dropdownMenus.forEach((dropdown) => {
-					dropdown.inert = true;
+					dropdown.inert = isMobile();
+				});
+				const tertiaryMenus = elements.navigation.querySelectorAll(CONFIG.SELECTORS.tertiaryMenu);
+				tertiaryMenus.forEach((menu) => {
+					menu.inert = isMobile();
 				});
 			}
 		},
@@ -224,6 +257,7 @@
 
 			// Dropdown delegation
 			elements.navigation.addEventListener("click", eventManager.handleDropdownClick);
+			elements.navigation.addEventListener("click", eventManager.handleTertiaryClick);
 			elements.navigation.addEventListener("keydown", eventManager.handleDropdownKeydown);
 			elements.navigation.addEventListener("focusout", eventManager.handleFocusOut);
 

@@ -1,0 +1,324 @@
+---
+title: "Portfolio | Fail/Safe Media"
+description: "Meta description for the page"
+permalink: "/portfolio/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Portfolio</span>
+            {# <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/project-one/" class="cs-link cs-active">Project One Gallery</a>
+            </div> #}
+        </div>
+        <!--Background Image-->
+
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                   Gallery   Video                -->
+<!-- ============================================ -->
+
+<section id="gallery-2235">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Project One</span>
+        <h2 class="cs-title">Lead Generating All-Inclusive Campaign</h2>
+      </div>
+      <p class="cs-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="cs-wrapper">
+      <div class="cs-video">
+        <!-- Option A: Self-hosted video -->
+        <video
+          class="cs-video-media"
+          controls
+          preload="metadata"
+          playsinline
+          poster="/assets/images/vhaledemo.png"
+        >
+          <source src="https://montanera.nyc3.cdn.digitaloceanspaces.com/VanessaHale/Vanessahaleherovid03.webm" type="video/mp4" />
+          Sorry, your browser doesn’t support embedded videos.
+        </video>
+
+        <!-- Option B: YouTube/Vimeo embed (use instead of <video>) -->
+        <!--
+        <div class="cs-video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Project One Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<div id="gallery-1689">
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <div class="cs-picture cs-video">
+            <video
+                class="cs-video-media"
+                controls
+                playsinline
+                preload="metadata"
+                poster="/assets/images/vertical.png"
+            >
+                <source src="https://montanera.nyc3.cdn.digitaloceanspaces.com/FailSafe/Vertical.webm" type="video/mp4" />
+                Sorry, your browser doesn’t support embedded videos.
+            </video>
+            </div>
+        <div class="cs-content">
+            <span class="cs-topper">Project Two</span>
+            <h2 class="cs-title">Premium Video Content & Ad Campaigns That Work</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <p class="cs-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            {# </p>
+            <a href="" class="cs-button-solid">Get Free Quote</a> #}
+        </div>
+    </div>
+</section>
+                   
+<!-- ============================================ -->
+<!--                   Gallery   Video                -->
+<!-- ============================================ -->
+
+<section id="gallery-2235">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Project Three</span>
+        <h2 class="cs-title">Lead Generating All-Inclusive Campaign</h2>
+      </div>
+      <p class="cs-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="cs-wrapper">
+      <div class="cs-video">
+        <!-- Option A: Self-hosted video -->
+        <video
+          class="cs-video-media"
+          controls
+          preload="metadata"
+          playsinline
+          poster="/assets/images/vhaledemo.png"
+        >
+          <source src="https://montanera.nyc3.cdn.digitaloceanspaces.com/VanessaHale/Vanessahaleherovid03.webm" type="video/mp4" />
+          Sorry, your browser doesn’t support embedded videos.
+        </video>
+
+        <!-- Option B: YouTube/Vimeo embed (use instead of <video>) -->
+        <!--
+        <div class="cs-video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Project One Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<div id="gallery-1689">
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-4.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-5.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg">
+        <img loading="lazy" decoding="async"
+                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/enterprise-gallery-6.jpg" alt="picture"
+                width="480" height="549">
+    </picture>
+</div>
+                                
+                                
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

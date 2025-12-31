@@ -14,7 +14,7 @@ permalink: "/about/"
 
 {% block body %}
 
-    <!-- ============================================ -->
+    {# <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
 
@@ -42,67 +42,85 @@ permalink: "/about/"
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
         </picture>
-    </div>
+    </div> #}
+                     
+<!-- ============================================ -->
+<!--                 Team Info                    -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
+<section id="about-1451">
+    <div class="cs-container">
+        <div id="cs-content-830">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Expert Team</span>
+                <h2 class="cs-title">Meet The Team Behind Our Clients Successes</h2>
             </div>
-            <!-- Right Content Section-->
+            {# <a href="" class="cs-button-solid">View All Members</a> #}
+        </div>         
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+            </picture>
             <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
+                <span class="cs-header">Andrew Spieler</span>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
                 </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <!--Floating Graphic-->
+                <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">
             </div>
         </div>
-    </section>
-
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Ben Pollack</span>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <!--Floating Graphic-->
+                 <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Cameron Babine</span>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <!--Floating Graphic-->
+                 <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">
+            </div>
+        </div>
+        
+    </div>
+</section>
+                                
     {% include 'sections/cta.html' %}
 
 {% endblock %}

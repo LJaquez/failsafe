@@ -1,6 +1,6 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
-description: "Meta description for the page"
+title: "Fail/Safe Media | Lead Generation for Service-Based Businesses | Bedford, NH"
+description: "Lead generation for service-based businesses. Failsafe Media combines video marketing, ad campaigns, and organic strategy to drive real results."
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
@@ -29,216 +29,179 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+   <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero-143">
-        <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
-            <h1 class="cs-title">
-                The Intermediate Website Kit (SASS)
-            </h1>
+<section id="hero-2042">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Lead Generation for Service-Based Businesses</span>
+            <h1 class="cs-title">More Leads. <br> Less Guesswork.</h1>
             <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
+                We help service-based businesses generate consistent leads with video, paid ads, and organic content built to convert.
             </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid">Get More Leads</a>
+            </div>
         </div>
+        {# <button class="cs-play" aria-label="click to play video">
+            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/play-right.svg" alt="play icon" width="24" height="24" aria-hidden="true" decoding="async">
+        </button> #}
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
-        </picture>
-    </section>
+    <div class="cs-video-wrapper">
+        <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!-->
+        <video loading="lazy" src="https://montanera.nyc3.cdn.digitaloceanspaces.com/FailSafe/AgencyPromoExample.webm" autoplay loop muted></video>
+        <!-- <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png" alt="body builder" width="630" height="877">
+        </picture> -->
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                   Services                   -->
-    <!-- ============================================ -->
+    
 
-    <section id="h-services-143">
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-4-4">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Why Work with Us</span> -->
+            <h2 class="cs-title">Our Numbers Speak For Themselves</h2>
+            <!-- <p class="cs-text">
+                Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis sagittis in blandit eleifend tortor ullamcorper eu placerat. Et orci felis volutpat, etiam vitae egestas volutpat pulvinar. 
+            </p> -->
+        </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Full Kitchen Remodel
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <span class="cs-number">40+</span>
+                <span class="cs-stat-text">Years Experience</span>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Exterior Repairs
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <span class="cs-number">3</span>
+                <span class="cs-stat-text">Experienced Staff</span>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Utility Maintenance
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <span class="cs-number">100+</span>
+                <span class="cs-stat-text">Happy Clients</span>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Design Consultation
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <span class="cs-number">500+</span>
+                <span class="cs-stat-text">Campaigns</span>
             </li>
         </ul>
-    </section>
+        {# <a href="" class="cs-button-solid">Contact Us</a> #}
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
-        </div>
-    </section>
+<section id="logos-857">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Clients We've Worked With</span>
+      <!-- <h2 class="cs-title">Clients We've Worked With</h2> -->
+    </div>
 
-    <!-- ============================================ -->
-    <!--             Side By Side Reverse             -->
-    <!-- ============================================ -->
+    <div class="cs-marquee" aria-label="Insurance logos">
+      <div class="cs-marquee__track">
+        <!-- Set A (your logos) -->
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="logo" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="logo" loading="lazy" decoding="async">
 
-    <section id="RPsbsr-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
-        </div>
-    </section>
+        <!-- Set B (duplicate for seamless loop) -->
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2426">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">Our Services</span>
+			<h2 class="cs-title">Everything You Need to Get More Leads</h2>
+		</div>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3">Content Creation</h3>
+					<picture class="cs-picture">
+						<!--Mobile Image-->
+						<source media="(max-width: 600px)" srcset="/assets/images/content-creation-m.webp" />
+						<!--Tablet and above Image-->
+						<source media="(min-width: 601px)" srcset="/assets/images/content-creation.webp" />
+						<img loading="lazy" decoding="async" src="/assets/images/content-creation.webp" alt="social media video content creation" width="373" height="420" />
+					</picture>
+					<p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="cs-border cs-border1" aria-hidden="true"></div>
+                    <div class="cs-border cs-border2" aria-hidden="true"></div>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3">Paid Ad Campaigns</h3>
+					<picture class="cs-picture">
+						<!--Mobile Image-->
+						<source media="(max-width: 600px)" srcset="/assets/images/content-creation-m.webp" />
+						<!--Tablet and above Image-->
+						<source media="(min-width: 601px)" srcset="/assets/images/content-creation.webp" />
+						<img loading="lazy" decoding="async" src="/assets/images/content-creation.webp" alt="social media video content creation" width="373" height="420" />
+					</picture>
+					<p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="cs-border cs-border1" aria-hidden="true"></div>
+                    <div class="cs-border cs-border2" aria-hidden="true"></div>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a href="" class="cs-link">
+					<h3 class="cs-h3">Organic Growth</h3>
+					<picture class="cs-picture">
+						<!--Mobile Image-->
+						<source media="(max-width: 600px)" srcset="/assets/images/content-creation-m.webp" />
+						<!--Tablet and above Image-->
+						<source media="(min-width: 601px)" srcset="/assets/images/content-creation.webp" />
+						<img loading="lazy" decoding="async" src="/assets/images/content-creation.webp" alt="social media video content creation" width="373" height="420" />
+					</picture>
+					<p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="cs-border cs-border1" aria-hidden="true"></div>
+                    <div class="cs-border cs-border2" aria-hidden="true"></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+                                
+
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->
@@ -457,6 +420,146 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            initHeroVideo();
+            initStatsCounter();
+        });
+
+        /* =========================
+        HERO VIDEO
+        ========================= */
+        function initHeroVideo() {
+            const hero = document.querySelector("#hero-2042");
+            if (!hero) return;
+
+            const wrapper = hero.querySelector(".cs-video-wrapper");
+            const video = hero.querySelector("video");
+            const playButton = hero.querySelector(".cs-play");
+
+            if (!wrapper || !video || !playButton) return;
+
+            const setPlayButtonVisible = (visible) => {
+                playButton.classList.toggle("cs-hide", !visible);
+            };
+
+            const togglePlayback = () => {
+                if (video.paused) {
+                video.play();
+                setPlayButtonVisible(false);
+                } else {
+                video.pause();
+                setPlayButtonVisible(true);
+                }
+            };
+
+            // Clicking the wrapper toggles playback
+            wrapper.addEventListener("click", () => {
+                togglePlayback();
+            });
+
+            // Clicking the play button toggles playback, but don't let it bubble and double-fire
+            playButton.addEventListener("click", (e) => {
+                e.stopPropagation();
+                togglePlayback();
+            });
+
+            // Optional: if video ends, show play button again
+            video.addEventListener("ended", () => {
+                setPlayButtonVisible(true);
+            });
+
+            // Initial state (if video is paused on load, show button)
+            setPlayButtonVisible(video.paused);
+        }
+
+        /* =========================
+        STATS COUNTER
+        Animates numbers inside:
+        #stats-4-4 .cs-number
+        ========================= */
+        function initStatsCounter() {
+            const section = document.querySelector("#stats-4-4");
+            if (!section) return;
+
+            const numberEls = Array.from(section.querySelectorAll(".cs-number"));
+            if (!numberEls.length) return;
+
+            // Respect reduced motion
+            const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            // Parse "40+", "1", "100+", etc.
+            const parseTarget = (text) => {
+                const cleaned = text.trim();
+                const hasPlus = cleaned.endsWith("+");
+                const numeric = parseInt(cleaned.replace(/[^\d]/g, ""), 10);
+                return { target: isNaN(numeric) ? 0 : numeric, suffix: hasPlus ? "+" : "" };
+            };
+
+            const animateNumber = (el, target, suffix) => {
+                if (reduceMotion) {
+                el.textContent = `${target}${suffix}`;
+                return;
+                }
+
+                const duration = 900; // ms
+                const start = 0;
+                const startTime = performance.now();
+
+                const step = (now) => {
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+
+                // Ease-out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const value = Math.round(start + (target - start) * eased);
+
+                    el.textContent = `${value}${suffix}`;
+
+                    if (progress < 1) requestAnimationFrame(step);
+                };
+
+                requestAnimationFrame(step);
+            };
+
+            // Store targets and set initial display to 0 (keeping suffix)
+            const items = numberEls.map((el) => {
+                const original = el.textContent;
+                const { target, suffix } = parseTarget(original);
+                el.dataset.target = String(target);
+                el.dataset.suffix = suffix;
+                el.textContent = `0${suffix}`;
+                return { el, target, suffix };
+            });
+
+            let hasAnimated = false;
+
+            const run = () => {
+                if (hasAnimated) return;
+                hasAnimated = true;
+
+                items.forEach(({ el, target, suffix }) => animateNumber(el, target, suffix));
+            };
+
+            // Trigger when section enters viewport
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            run();
+                            observer.disconnect();
+                        }
+                    });
+                },
+                { threshold: 0.35 }
+            );
+
+            observer.observe(section);
+        }
+</script>
+
+               
 
     {% include 'sections/cta.html' %}
 {% endblock %}
