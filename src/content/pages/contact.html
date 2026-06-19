@@ -14,73 +14,54 @@ permalink: "/contact/"
 
 {% block body %}
 
-   <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-1601">
+<section id="contact-1700">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get In Touch</h2>
+            {# <span class="cs-topper">About Us</span> #}
+            <h2 class="cs-title">Meaning Meets <span style="color: var(--primary); font-style: italic;">Strategy</span></h2>
+            <p class="cs-text">
+                Fail/Safe Media is built on the idea that growth comes from trying, not waiting. We create a space where ideas can be explored, tested, and shaped into something meaningful—without the pressure to get it perfect the first time.
+            </p>
+            <p class="cs-text">
+                We help you bring your ideas to life in a way that actually resonates.
+            </p>
+            <p class="cs-text">
+                From content creation to strategic campaigns, everything we do is designed to help you show up with clarity, confidence, and consistency.
+            </p>
+            <p class="cs-text">
+                Because the goal isn’t just to create something once.
+            </p>
+            <p class="cs-text">
+                It’s to create stories that last.
+            </p>
+            
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1700" name="Contact Form" method="post">
+            <div class="cs-content">
+                {# <span class="cs-topper">Contact Us</span> #}
+                <h2 class="cs-title">Contact Us</h2>
+            </div>
+            
             <!--Form-->
-            <form class="cs-form" id="cs-form-1601" name="Contact Form" method="post">
-                <label class="cs-label">
-                    Name
-                    <input class="cs-input" required type="text" id="name-1601" name="name" placeholder="Name">
-                </label>
-                <label class="cs-label cs-email">
-                    Email
-                    <input class="cs-input" required type="email" id="email-1601" name="email" placeholder="Email">
-                </label>
-                <label class="cs-label cs-phone">
-                    Phone
-                    <input class="cs-input" required type="phone" id="phone-1601" name="phone" placeholder="Phone">
-                </label>
-                <label class="cs-label">
-                    Message
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1601" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid cs-submit" type="submit">Submit Now</button>
-            </form>
-        </div>
-        <div class="cs-wrapper">
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <span class="cs-header">Our Support</span>
-                    <p class="cs-item-text">
-                        We are available for your 24/7 support.<br>
-                        <a class="cs-link" href="tell:555-555-5555">(555) 555-5555</a>                    
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-header">Email Us</span>
-                    <p class="cs-item-text">
-                        Email your questions at
-                        <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-header">Reviews</span>
-                    <p class="cs-item-text">
-                        See Our reviews on Google or leave a review
-                        <a href="" class="cs-link">
-                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/google-1a.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
-                            Google Reviews
-                        </a>                   
-                    </p>
-                </li>
-            </ul>
-            <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg" alt="people" width="522" height="771">
-            </picture>
-        </div>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+            hbspt.forms.create({
+                portalId: "50955782",
+                formId: "a0b10b2f-7020-4709-aef2-143a9bdd7b9c",
+                region: "na1"
+            });
+            </script>
+        </form>
     </div>
 </section>
+                                
+
+
                                 
 
 {% endblock %}

@@ -39,7 +39,7 @@
             text-align: center;
             width: 100%;
             /* changes to 564px on tablet */
-            max-width: calc(328/16 * 1rem);
+            // max-width: calc(328/16 * 1rem);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -48,13 +48,20 @@
 
         .cs-title {
             /* 39px - 61px */
-            font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+            font-size: clamp(3.75rem, 9vw, 9rem);
             color: var(--bodyTextColorWhite);
+            font-weight: 900;
+            line-height: 0.9;
+            max-width: 90%;
+            letter-spacing: -0.05em;
+            text-align: left;
         }
 
         .cs-text {
             margin-bottom: calc(32/16 * 1rem);
             color: var(--bodyTextColorWhite);
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            max-width: 90%;
         }
 
         .cs-button-group {
@@ -87,7 +94,7 @@
         }
 
         .cs-button-solid {
-            font-size: calc(16/16 * 1rem);
+            font-size: calc(16/14 * 1rem);
             font-weight: 700;
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -190,7 +197,7 @@
 
         .cs-content {
             text-align: left;
-            max-width: calc(564/16 * 1rem);
+            // max-width: calc(564/16 * 1rem);
             align-items: flex-start;
         }
 

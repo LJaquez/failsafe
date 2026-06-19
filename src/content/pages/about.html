@@ -7,83 +7,141 @@ permalink: "/about/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+ 
     <link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
 
-    {# <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
+<section id="meet-team-1704">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Co-Founders</span>
+                <h2 class="cs-title">Our Expert Team</h2>
+                <p class="cs-text">
+                    With over 40 years of combined experience, your business is in the best of hands. 
+                </p>
             </div>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div> #}
-                     
+        <ul class="cs-card-group">
+            <li class="cs-item">
+               
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/andrew.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/andrew.jpg">
+                    <a href="#andrew">
+                        <img loading="lazy" decoding="async" src="/assets/images/andrew.jpg" alt="person" width="305" height="407">
+                    </a>
+                </picture>
+                <div class="cs-info">
+                    <a href="#andrew" style="text-decoration: none;">
+                        <span class="cs-name">Andrew Spieler</span>
+                    </a>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async" src="/assets/svgs/linkedin.svg" alt="linkedin" width="16" height="16">
+                        </a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/ben-s.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/ben-s.jpg">
+                    <a href="#ben">
+                        <img loading="lazy" decoding="async" src="/assets/images/ben-s.jpg" alt="person" width="305" height="407">
+                    </a>
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Ben Pollack</span>
+                    <div class="cs-social">
+                        <a href="https://www.linkedin.com/in/pollackbenjamin/" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async" src="/assets/svgs/linkedin.svg" alt="linkedin" width="16" height="16">
+                        </a>                        
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/cam-s.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/cam-s.png">
+                    <a href="#cam">
+                        <img loading="lazy" decoding="async" src="/assets/images/cam-s.png" alt="person" width="305" height="407">
+                    </a>
+                </picture>
+                <div class="cs-info">
+                    <a href="#cam" style="text-decoration: none;">
+                        <span class="cs-name">Cam Babine</span>
+                    </a>
+                    <div class="cs-social">
+                        <a href="https://www.linkedin.com/in/cam-babine-954940a5/" class="cs-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async" src="/assets/svgs/linkedin.svg" alt="linkedin" width="16" height="16">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+                                                    
 <!-- ============================================ -->
 <!--                 Team Info                    -->
 <!-- ============================================ -->
 
 <section id="about-1451">
-    <div class="cs-container">
-        <div id="cs-content-830">
-            <div class="cs-flex">
-                <span class="cs-topper">Our Expert Team</span>
-                <h2 class="cs-title">Meet The Team Behind Our Clients Successes</h2>
-            </div>
-            {# <a href="" class="cs-button-solid">View All Members</a> #}
-        </div>         
-        <div class="cs-info">
+    <div class="cs-container">    
+        <div class="cs-info" id="andrew">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/andrew.jpeg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+                <source media="(min-width: 601px)" srcset="/assets/images/andrew.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/andrew.jpeg" alt="person" width="522" height="696">
             </picture>
             <div class="cs-content">
                 <span class="cs-header">Andrew Spieler</span>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    Andrew Spieler is a filmmaker, photographer, and creative entrepreneur with over two decades of experience in visual storytelling across film, television, commercial production, and branded content. His career began in filmmaking, earning a Bachelor of Fine Arts in Film Directing from the prestigious SUNY Purchase Film Conservatory before continuing his education at the renowned American Film Institute Conservatory, where he earned a Master of Fine Arts in Directing.
                 </p>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    Following graduation, Andrew spent the next 15 years in Los Angeles working throughout the entertainment industry on independent feature films, television productions, national commercials, and branded content campaigns. During that time, he collaborated with creative teams and marketing departments producing content for major brands and organizations including Amazon Prime Video, Universal Studios, Chase Bank, and Capital One. His work spanned directing, producing, and production management, helping brands connect with audiences through compelling visual narratives and strategic storytelling.
                 </p>
+                <p class="cs-text">
+                    After returning home to New England, Andrew combined his filmmaking background with his passion for entrepreneurship and launched Andrew Spieler Photography, specializing in real estate and commercial media production. As demand grew, he expanded operations by opening a dedicated media studio in Bedford, New Hampshire, creating a space where businesses, entrepreneurs, and real estate professionals could develop high-quality visual content and strengthen their brands.
+                </p>
+                <p class="cs-text">
+                    Recognizing a growing need for strategic marketing solutions that extended beyond content creation alone, Andrew partnered with Ben Pollack and Cam Babine to co-found FAIL/SAFE MEDIA. As Co-Founder, Andrew leads the company’s creative vision and production division, overseeing photography, video production, podcasting, branding assets, and content development. Drawing on his background in Hollywood filmmaking and commercial storytelling, he helps clients transform ideas into marketing assets that not only look exceptional but drive meaningful business growth.
+                </p>
+                <p class="cs-text">
+                    Today, Andrew combines cinematic storytelling, technical expertise, and entrepreneurial experience to help businesses stand out in increasingly competitive markets. Whether producing a feature-quality brand video, crafting a real estate marketing campaign, or developing long-term content strategies, he remains committed to one core belief: great storytelling builds trust, and trust builds lasting relationships.
+                </p>
+                
                 <!--Floating Graphic-->
                 <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">
             </div>
         </div>
-        <div class="cs-info">
+        <div class="cs-info" id="ben">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/ben-s.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+                <source media="(min-width: 601px)" srcset="/assets/images/ben.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/ben.jpg" alt="person" width="522" height="696">
             </picture>
             <div class="cs-content">
                 <span class="cs-header">Ben Pollack</span>
@@ -97,21 +155,34 @@ permalink: "/about/"
                  <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">
             </div>
         </div>
-        <div class="cs-info">
+        <div class="cs-info" id="cam">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/cam-s.png">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+                <source media="(min-width: 601px)" srcset="/assets/images/cam.png">
+                <img loading="lazy" decoding="async" src="/assets/images/cam.png" alt="person" width="522" height="696">
             </picture>
             <div class="cs-content">
                 <span class="cs-header">Cameron Babine</span>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    Cam Babine's path to building one of New England's most dynamic content marketing agencies didn't follow a straight line, and that's exactly what makes him different.
                 </p>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    After studying business at Johnson & Wales University in Providence, Cam learned what actually matters in the real world: people. His early career took him from retail management at Champs Sports to sales at Staples, before landing at Granite Telecommunications as an account manager where something clicked. He discovered he had a rare ability to understand people, build relationships, and create trust after the sale. It wasn't just selling. It was connecting.
+                </p>
+                <p class="cs-text">
+                    But his most formative chapter came when, almost as a joke, he launched a sports media page called Daily Sports Dosage. What started as an aggregator quietly became something no one saw coming. Through relentless consistency, posting every single day for five years, sometimes seven times a day, and an obsessive understanding of data and pattern recognition, Cam built an audience of over one million followers averaging 30 million views a month across every major platform. During COVID, while most creators were still betting on a single channel, he had already cracked the multichannel playbook.
+                </p>
+                <p class="cs-text">
+                    Then came the moment that changed everything. A sponsor reached out, not about the page, but with a different question: can you help me grow my business? That was it. Cam realized that social media leverage without a business attached to it was just noise. He practiced what he preached, built a six-figure company from organic media alone, and never looked back.
+                </p>
+                <p class="cs-text">
+                    That experience led him to co-found FAIL/SAFE MEDIA alongside Andrew Spieler and Ben Pollack. Together, they built something the market was missing: an agency that actually diagnoses before it prescribes. While most local marketing companies sell one solution to every client, FAIL/SAFE MEDIA operates more like a fiduciary, identifying what a business actually needs, not what generates the biggest invoice. It's a philosophy built around one metric that most agencies ignore: how long clients stay.
+                </p>
+                <p class="cs-text">
+                    As Co-Founder, Cam leads FAIL/SAFE MEDIA's organic content strategy and creative direction, bringing an understanding of human psychology and content behavior that is genuinely rare. He doesn't just understand what performs, he understands why.
+                    Outside the office, Cam is devoted to his growing family, fiercely competitive on the golf course, and still watches more sports than any agency founder probably should.
                 </p>
                 <!--Floating Graphic-->
                  <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="person" width="193" height="197">

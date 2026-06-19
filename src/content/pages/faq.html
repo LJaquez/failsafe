@@ -11,225 +11,95 @@ permalink: "/faqs/"
 {% endblock %}
 
 {% block body %}
-  <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
-
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">FAQs</span>
-            {# <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/contact/" class="cs-link cs-active">Contact Us</a>
-            </div> #}
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div>
-<!-- ============================================ -->
-<!--                     FAQ                      -->
-<!-- ============================================ -->
-
-<section id="faq-443">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">FAQ</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
-            <ul class="cs-faq-group">
-                <!-- Active class added as default -->
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How do I pay for the Essentials or Premium plan?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Can I cancel my Essentials or Premium plan subscription at any time?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            We need to add new users to our team. How will that be billed?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            My team wants to cancel its subscription. How do we do that? Can we get a refund?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you offer discounts for non-profit organizations or educational institutions?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <!--Create a container for the grey box's base that matches the same width as the .cs-container-->
-        <div class="cs-floating-box" aria-hidden="true"></div>
-    </div>
-    <!--Big Image-->
-    <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="/assets/svgs/slash.svg">
-        <source media="(min-width: 601px)" srcset="/assets/svgs/slash.svg">
-        <img loading="lazy" decoding="async" src="/assets/svgs/slash.svg" alt="" width="735" height="803" aria-hidden="true">
-    </picture>
-</section>
 
 <!-- ============================================ -->
-<!--                     CTA                      -->
-<!-- ============================================ -->
-
-<section id="cta-443">
-    <div class="cs-wrapper">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Get Quote</span>
-                <h2 class="cs-title">Start Your Renovation Today</h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <a href="" class="cs-cta">
-                <!--Arrow Right-->
-                <svg class="cs-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill="#FAFBFC" d="M24.55 31.367c-.317 0-.633-.117-.883-.367a1.258 1.258 0 0 1 0-1.767L32.9 20l-9.233-9.233a1.258 1.258 0 0 1 0-1.767 1.258 1.258 0 0 1 1.766 0L35.55 19.117a1.258 1.258 0 0 1 0 1.766L25.433 31c-.25.25-.566.367-.883.367Z"/><path fill="#FAFBFC" d="M34.383 21.25H6.333A1.26 1.26 0 0 1 5.083 20c0-.683.567-1.25 1.25-1.25h28.05c.684 0 1.25.567 1.25 1.25a1.26 1.26 0 0 1-1.25 1.25Z"/></svg>
-                <!--Wrapped in a span so it can be animated-->
-                <span class="cs-cta-text">Get Free<br> Quote</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<script>
-    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-            item.classList.toggle('active')
-        }
-        item.addEventListener('click', onClick)
-        }
-</script>
-                                
-{# <!-- ============================================ -->
 <!--                    FAQ                       -->
 <!-- ============================================ -->
 
-<section id="faq-1346">
+<section id="faq-2066">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Asked Questions</span>
+            <span class="cs-topper">Your Questions, Answered</span>
             <h2 class="cs-title">Frequently Asked Questions</h2>
-            <p class="cs-text">
-                In the new era of technology we look in the future with certainty and for any post types, or just they are so much great of all to a program.
-            </p>
+            {# <p class="cs-text">
+                Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+            </p> #}
         </div>
         <div class="cs-flex-group">
             <div class="cs-button-group">
-                <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
                 <button class="cs-option" data-filter="one">
-                    Lead Generation
+                    General
                 </button>
                 <button class="cs-option" data-filter="two">
-                    Video Content Creation
-                </button>
-                <button class="cs-option" data-filter="three">
-                    Organic Growth
-                </button>
-                <button class="cs-option" data-filter="four">
                     Paid Ads
                 </button>
+                <button class="cs-option" data-filter="three">
+                    Social Media
+                </button>
+                <button class="cs-option" data-filter="four">
+                    Real-Estate
+                </button>
             </div>
-            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
             <div class="cs-wrapper">
-                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
                 <ul class="cs-faq-group" data-category="one">
                     <!-- Active class added as default -->
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                What is the best way to start investing?
+                               How is Fail/Safe Media different from other marketing agencies?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                            Instead of relying on cookie-cutter templates or chasing temporary trends, we focus on building resilient, strategy-backed campaigns. True to our name, we build a "fail-safe" foundation for your brand. We prioritize authentic storytelling and data-driven results over vanity metrics, ensuring that every piece of content we create actually moves the needle for your business.
+                        </p>
+
+
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                               What exactly do you do?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We are a full-service digital marketing and content creation agency. In short: we help brands get noticed by the right people. Our team handles everything from high-level brand strategy and social media management to hands-on video production, photography, and ad campaigns. We take the stress of marketing off your plate so you can focus on running your business.
+
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                What are the tax implications of investing in the stock market?
+                                What if I don’t want to be on camera?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            It’s completely normal to feel camera-shy, but we strongly encourage our clients to give it a try. Why? Because people connect with people, not logos. Putting a face to your business and building a personal brand is one of the most powerful ways to establish trust, authority, and long-term loyalty with your audience.
+                        </p>
+                        <p class="cs-item-p">
+                            If you are nervous, we promise to make it painless. We specialize in making the production process incredibly comfortable and low-pressure. We'll coach you through it, keep things conversational, and use our editing magic to ensure you look and sound your absolute best.
+                        </p>
+                        <p class="cs-item-p">
+                            That said, if stepping in front of the lens is a hard "no," we have plenty of workarounds. We can source and cast talented creators to act as the ongoing face of your brand, or we can even leverage cutting-edge AI avatars and voiceovers to create compelling, human-like content without you ever having to hit record.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I improve my credit score?
+                               How much is this going to cost?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            Because every brand's needs are unique, we don't believe in one-size-fits-all pricing. The cost depends entirely on the scope of the project, the volume of content, and the platforms involved. Once we have a quick chat to understand your specific goals, we’ll provide a transparent, custom proposal with clear deliverables.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                What is the difference between a traditional IRA and a Roth IRA?
+                                What if I don’t know what I need?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            That is exactly what we are here for! You don't need to have a fully baked strategy before reaching out. We start every new client relationship with a discovery call to audit your current presence, identify what's missing, and recommend the exact services that will give you the best return on investment. You just bring the goals; we’ll build the roadmap.
                         </p>
                     </li>
                 </ul>
@@ -238,51 +108,127 @@ permalink: "/faqs/"
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I improve my credit score?
+                                What is a paid ad?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                            A paid ad is content you pay a platform to show to strangers.
+                        </p>
+                        <p class="cs-item-p">
+                            Think of it this way: when someone scrolls through Facebook or Instagram, they see posts from friends and family. A paid ad shows up in that same feed, but it comes from a business. The business pays the platform to put it in front of specific people who are likely to care about what they offer.
+                        </p>
+                        <p class="cs-item-p">
+                            That content could be a video, a photo, or text. It shows someone a problem they have, a solution that exists, and a clear next step to take if they want it.
+                        </p>
+                        <p class="cs-item-p">
+                            The whole point of a paid ad is to get the right person to raise their hand.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I improve my credit score?
+                                How quickly will I see results?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            It depends on where you're starting from.
+                        </p>
+                        <p class="cs-item-p">
+                            If you've run ads before, we have data to work with. We can move faster because we're not starting from zero. If this is your first campaign, the first few weeks are a learning period. The platform is figuring out who responds to your ads. That's normal, and it's necessary.
+                        </p>
+                        <p class="cs-item-p">
+                            Here's what you can count on: within the first week, you'll have real data. You'll see what's working, what isn't, and where people are dropping off. That's not nothing. That's the roadmap.
+                        </p>
+                        <p class="cs-item-p">
+                            Some businesses get leads in the first few days. Others take a few weeks to hit their stride. The difference usually comes down to ad spend, how competitive the market is, and how dialed in the offer is.
+                        </p>
+                        <p class="cs-item-p">
+                            What we don't do is guess. Every pivot we make is based on what the data is telling us. That's how you avoid wasting money chasing the wrong thing.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I improve my credit score?
+                                What happens when we get leads from paid ads?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            We make sure every lead lands somewhere you can act on it fast.
+                        </p>
+                        <p class="cs-item-p">
+                            Depending on your setup, leads flow directly into your CRM, your email inbox, or both. If you're running lead form ads, you'll get an instant notification the moment someone fills out a form. We also track everything in a shared lead tracker so nothing slips through the cracks.
+                        </p>
+                        <p class="cs-item-p">
+                            But here's the part that actually determines whether leads turn into revenue: speed to lead.
+                        </p>
+                        <p class="cs-item-p">
+                           Social media leads are not like referrals. They didn't ask a friend about you. They saw your ad, something clicked, and they raised their hand. That buying mindset has a short shelf life. The longer you wait to follow up, the colder they get.
+                        </p>
+                        <p class="cs-item-p">
+                           Call. Text. Email. Follow up more than feels comfortable. The businesses that win with paid ads are almost always the ones who treat every lead like it came from their best referral source.
+                        </p>
+                        <p class="cs-item-p">
+                           We'll set up the delivery side. The follow-up is on you, and it matters as much as the ads themselves.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I improve my credit score?
+                                How much should I budget for monthly ad spend?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            For most local service businesses we work with, we recommend starting at $50 per day. That's roughly $1,500 a month going directly to the platform.
+                        </p>
+                        <p class="cs-item-p">
+                            That number isn't arbitrary. It's enough to gather real data quickly without burning through your budget while we're still in the learning phase. Go too low and the platform doesn't have enough to work with. Go too high before you have winning ads and you're just spending faster on the wrong thing.
+                        </p>
+                        <p class="cs-item-p">
+                            If you're running a national offer or targeting multiple markets, the starting point is higher. More geography means more competition for attention, and the platform needs more budget to find the right people across a larger pool. In those cases, we'll build a recommended budget around your specific footprint before anything goes live.
+                        </p>
+                        <p class="cs-item-p">
+                          Here's our rule regardless of scale: we will never ask you to increase your spend if the ads aren't working. The only time we push to scale is when something is clearly winning and we want to pour fuel on it.
+                        </p>
+                        <p class="cs-item-p">
+                           Your market size and location factor in too. We'll give you a specific recommendation based on your situation before we ever touch your budget.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                Do I need to be on camera?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            Short answer: no. But if you're the face of your business, being on camera works in your favor.
+                        </p>
+                        <p class="cs-item-p">
+                            People buy from people. When a local business owner shows up in their own ads, it builds trust faster than any graphic or stock footage can. If you're client-facing, your face is actually one of your strongest assets.
+                        </p>
+                        <p class="cs-item-p">
+                            That said, we make it easy. You won't memorize scripts or film 20 takes. We show up with a teleprompter loaded with copy you've already approved. You read, we coach, and we get what we need. Most people are surprised by how painless it is.
+                        </p>
+                        <p class="cs-item-p">
+                            If you're remote or just not open to being on camera, we can build ads around an AI avatar. It's a legitimate option that still produces quality content without putting you in an uncomfortable spot. We treat it as a last resort because the human version almost always performs better, but it's there if you need it.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Is the ad spend separate from what I pay you?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes. Always.
+                        </p>
+                        <p class="cs-item-p">
+                            Your ad spend goes directly to the platform. We connect your business card to your ad account, the platforms charge you directly, and we never touch that money. We don't mark it up, we don't hold it, and we never store your payment information.
+                        </p>
+                        <p class="cs-item-p">
+                           What you pay FailSafe covers strategy, creative, and management. What you pay Meta or Google covers distribution. Two separate buckets, total transparency.
+                        </p>
+                        <p class="cs-item-p">
+                            Your ad accounts also stay yours. If we ever part ways, you walk away with full ownership of everything we built.
                         </p>
                     </li>
                 </ul>
@@ -291,111 +237,159 @@ permalink: "/faqs/"
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                How does it work?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                           After our kickoff call where we get to know you, we book our first shoot. From there our team researches the top performing content across your niche and we plan 6 weeks worth of content, typically 8 to 12 videos that we believe will suit your brand and speak to your audience through proven formats and viral trends.
+                        </p>
+                        <p class="cs-item-p">
+                            This way everything is fully vetted out before we ever show up, which gives you a much higher chance of success because the research is done. On shoot day it's simple and straightforward. From there we get everything edited within 5 business days and send it back to you for approval. Once approved, and by this point we will already have access to your social media accounts, we will post two times per week.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                What does a content shoot look like?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            We will agree on a location ahead of time and block 2.5 hours for the first shoot. After that, shoots typically run about 2 hours since the first one is where we coach you up and get you comfortable with the process. When we arrive we will already have 6 weeks worth of vetted content ready, typically 8 to 12 videos. We build in that buffer so there is never a lapse between shoots. Our co-founder Cam will be on site with one of our videographers to coach you through every step. And most importantly, we are having fun. If you are not enjoying the process the content will reflect that, and that means we have not done our job.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                How often will it be posted?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            We will post 2 videos per week.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                Do you post the content for us?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            Yes, when we start our relationship, part of the kickoff call process is giving us access to the social media platforms we agree upon.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                Is it too late to start?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            No, in fact this is the best time to start. People mistake volume for quality. While there are hundreds of millions of people posting, 99% of them are just noise. They are throwing content into the void with no strategy. Working with us, we will make you stand out among the crowd while speaking in your voice in a way that feels comfortable and builds trust with your ideal clients.
                         </p>
-                    </li>                    
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                I've tried posting before and it didn't work, why would this be different?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            The difference between what you did before and what we will do comes down to three things: experience, data and strategy. We have years of content creation experience that has built businesses and eclipsed hundreds of millions of views. But as proud as we are of that, all we really care about is the data. If something is working or not working, we follow the data, not a gut feeling. That is where most marketing companies fall short.And then there is the strategy. Most people just guess their way through posting. We combine our expertise, research, your goals and the data to build a strategy that is specifically tailored to you and serves as our north star throughout the entire campaign.
+                        </p>
+                    </li>
                 </ul>
                 <ul class="cs-faq-group cs-hidden" data-category="four">
                     <!-- Active class added as default -->
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                How are your real estate media services different?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
+                            Most real estate media companies focus on quickly capturing and delivering photos and other assets. We focus on building relationships with our Clients and helping their properties stand out in a crowded online landscape. 
+                        </p>
+                        <p class="cs-item-p">
+                            At FAIL/SAFE MEDIA, we combine professional photography, cinematic video, drone imagery, virtual staging, floor plans, single-property websites, social media content, and strategic marketing support to create a complete marketing package. Our background in filmmaking, storytelling, and digital marketing allows us to think beyond simply documenting a property—we focus on creating an emotional connection that captures buyer attention.
+                        </p>
+                        <p class="cs-item-p">
+                            We also understand the needs of real estate professionals because we’re deeply involved in the industry ourselves. That means responsive communication, reliable delivery timelines, and media designed not only to showcase a property but also to help agents build their brand.
+                        </p>
+                        <p class="cs-item-p">
+                            Our goal is simple: help great properties get noticed and help great agents stop being the best-kept secret in town.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                               Do professional photos really make a difference?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            Absolutely. Professional photography is often the first impression potential customers have of your business, property, or brand. High-quality images help establish credibility, build trust, and communicate professionalism before a conversation ever takes place. Whether you’re marketing a home, promoting a service, or showcasing your team, strong visuals help your audience feel more confident in choosing you. In today’s digital world, professional photography isn’t just a luxury—it’s a competitive necessity.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                What types of photography do you offer?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                           FailSafe Media offers a wide range of professional photography services tailored to businesses, organizations, and real estate professionals. Our services include:
+                            <ul style="list-style-type: square; list-style-position: inside; padding-bottom: 1rem;">
+                                <li class="cs-item-li">HDR Real Estate Photography</li>
+                                <li class="cs-item-li">High End Image editing including: Virtual Staging & Decluttering</li>
+                                <li class="cs-item-li">3D Tours (Matterport & Zillow Showcase)</li>
+                                <li class="cs-item-li">Agent Branded Social Media Listing Videos</li>
+                                <li class="cs-item-li">Floor Plans</li>
+                                <li class="cs-item-li">Single Property Websites and Online Digital Marketing Materials</li>
+                                <li class="cs-item-li">Commercial and Corporate Photography/Videography</li>
+                                <li class="cs-item-li">Headshot Photography</li>
+                                <li class="cs-item-li">Architectural Photography</li>
+                                <li class="cs-item-li">Construction and Progress Photography</li>
+                                <li class="cs-item-li">Aerial Drone Photography/Videography</li>
+                            </ul>
+                        </p>
+                        <p class="cs-item-p">
+                            Every project is approached with a focus on storytelling, ensuring your images not only look great but also support your business and marketing goals.
                         </p>
                     </li>
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
+                                Can you provide drone photography and aerial video?
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                           Yes. FailSafe Media provides professional drone photography and aerial videography to help showcase properties, businesses, construction projects, and unique locations from perspectives that traditional photography simply can’t capture.
                         </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How can I reduce my tax liability as a self-employed individual?
-                            </span>
-                        </button>
                         <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                            Aerial imagery is especially valuable for:
+                            <ul style="list-style-type: square; list-style-position: inside; padding-bottom: 1rem;">
+                                <li class="cs-item-li">HDR Real Estate Photography</li>
+                                <li class="cs-item-li">High End Image editing including: Virtual Staging & Decluttering</li>
+                                <li class="cs-item-li">3D Tours (Matterport & Zillow Showcase)</li>
+                                <li class="cs-item-li">Agent Branded Social Media Listing Videos</li>
+                                <li class="cs-item-li">Floor Plans</li>
+                                <li class="cs-item-li">Single Property Websites and Online Digital Marketing Materials</li>
+                                <li class="cs-item-li">Commercial and Corporate Photography/Videography</li>
+                                <li class="cs-item-li">Headshot Photography</li>
+                                <li class="cs-item-li">Architectural Photography</li>
+                                <li class="cs-item-li">Construction and Progress Photography</li>
+                                <li class="cs-item-li">Aerial Drone Photography/Videography</li>
+                            </ul>
                         </p>
-                    </li>
+                        <p class="cs-item-p">
+                            All drone operations are conducted by FAA-certified pilots and follow current safety and regulatory requirements.                     </li>
                 </ul>
+                
             </div>
         </div>
+        
     </div>
 </section>
+
 <script>
     const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         for (const item of faqItems) {
@@ -446,9 +440,11 @@ permalink: "/faqs/"
         }
 
         new FAQFilter()
-</script> #}
+                            
+</script>
                                 
 
-    {# {% include 'sections/cta.html' %} #}
+
+    {% include 'sections/cta.html' %}
 
 {% endblock %}
